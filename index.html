@@ -76,6 +76,12 @@ function showSlides(n) {
     padding-top: 32px;
     padding-botton:32px;
   }
+  h1 {
+    font-size: 64px;
+  }
+  
+  
+/* Navigation bar START >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 nav {
     width: 100%;
     background: orange;
@@ -108,10 +114,10 @@ nav ul li a {
 nav ul li a:hover {
     background-color: grey;
 }
+/* Navigation bar END >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
 
-
-/* CSS for slideshow */
+/* Slideshow START   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 * {box-sizing:border-box}
 
 /* Slideshow container */
@@ -150,7 +156,7 @@ nav ul li a:hover {
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(255,255,255,0.15);
 }
 
 /* Caption text */
@@ -206,7 +212,7 @@ nav ul li a:hover {
   from {opacity: .4} 
   to {opacity: 1}
 }
-
+/* Slideshow END >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
   </style>
   
   <body class="background-orange">
@@ -226,8 +232,8 @@ nav ul li a:hover {
   <div class="padding-large">
     <!-- Header/Home -->
     <header class=" background-orange">
-      <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Ben Newman.</h1>
-      <p>Photographer and Web Designer.</p>
+      <h1><span class="w3-hide-small">I'm</span> Ben Newman.</h1>
+      <p>Please watch the video below.</p>
       <img src="https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=350" alt="boy" class="w3-image" width="992" height="1108">
     </header>
 
@@ -248,7 +254,7 @@ nav ul li a:hover {
     </div>
 
     <!-- Portfolio Section -->
-    <div class="w3-padding-64 w3-content" id="photos">
+    <div class="w3-padding-64 w3-content" id="Photos">
       <h2 class="w3-text-light-grey">My Photos</h2>
       <hr style="width:200px" class="w3-opacity">
 
