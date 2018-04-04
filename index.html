@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
   <title>Single Page Website - Ben Newman </title>
@@ -17,7 +16,7 @@
   
   <style>
   body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-  .w3-row-padding img {margin-bottom: 12px}
+  .row-padding img {margin-bottom: 12px}
   /* Set the width of the sidebar to 120px */
   .sidebar {width: 120px;background: #222;}
   /* Add a left margin to the "page content" that matches the width of the sidebar (120 px) */
@@ -25,12 +24,14 @@
   /* Remove margins from "page content" on small screens */
   @media only screen and (max-width: 600px) {#main {margin-left: 0}}
   
+  .row-padding img {
+    margin-bottom: 12px
+  }
   .background-black {
     color:#fff!important;
     background-color:#000!important}
   }
   .sidebar{
-
     background-color:#fff;
     z-index:1;
   }
@@ -46,28 +47,9 @@
   </style>
   
   <body class="background-black">
-  <!-- Icon Bar (Sidebar - hidden on small screens) -->
-  <nav class="sidebar w3-bar-block w3-small w3-hide-small w3-center">
-    <a href="#" class="w3-bar-item w3-button padding-large background-black">
-      <i class="fa fa-home w3-xxlarge"></i>
-      <p>HOME</p>
-    </a>
-    <a href="#about" class="w3-bar-item w3-button padding-large w3-hover-black">
-      <i class="fa fa-user w3-xxlarge"></i>
-      <p>ABOUT</p>
-    </a>
-    <a href="#photos" class="w3-bar-item w3-button padding-large w3-hover-black">
-      <i class="fa fa-eye w3-xxlarge"></i>
-      <p>PHOTOS</p>
-    </a>
-    <a href="#Something Interesting" class="w3-bar-item w3-button padding-large w3-hover-black">
-      <i class="fa fa-envelope w3-xxlarge"></i>
-      <p>SOMETHING INTERESTING</p>
-    </a>
-  </nav>
 
-  <!-- Navbar on small screens (Hidden on medium and large screens) -->
-  <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <!-- Navbar -->
+  <div class="w3-top" id="myNavbar">
     <div class="w3-bar background-black w3-opacity w3-hover-opacity-off w3-center w3-small">
       <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
       <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
@@ -107,7 +89,7 @@
       <hr style="width:200px" class="w3-opacity">
 
       <!-- Grid for photos -->
-      <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="row-padding" style="margin:0 -16px">
         <div class="w3-half">
           <img src="/w3images/wedding.jpg" style="width:100%">
           <img src="/w3images/rocks.jpg" style="width:100%">
