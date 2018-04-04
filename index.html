@@ -15,19 +15,21 @@
   
   
   <style>
-  body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-  .row-padding img {margin-bottom: 12px}
-  /* Set the width of the sidebar to 120px */
-  .sidebar {width: 120px;background: #222;}
-  /* Add a left margin to the "page content" that matches the width of the sidebar (120 px) */
-  #main {margin-left: 120px}
+  
+  body, h1,h2,h3,h4,h5,h6 {
+    font-family: "Montserrat", sans-serif
+  }
+  .row-padding img {
+    margin-bottom: 12px;
+  }
+ 
   /* Remove margins from "page content" on small screens */
   @media only screen and (max-width: 600px) {#main {margin-left: 0}}
   
   .row-padding img {
     margin-bottom: 12px
   }
-  .background-black {
+  .background-orange {
     color:#fff!important;
     background-color:orange!important}
   }
@@ -44,24 +46,65 @@
   .padding-large{
     padding:12px 24px!important
   }
+  .top-bar{width:100%;
+    overflow:hidden
+  }
+  
+nav {
+    width: 100%;
+    background: orange;
+    position: fixed;
+    opacity:0.7;
+}
+
+nav ul {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    list-style: none;
+    float: left;
+    text-align: center;
+    border-right: 1px solid #ccc;
+    width: calc(100% / 5);
+    box-sizing: border-box;
+}
+
+}
+
+nav ul li:first-child {
+    border-left: none;
+}
+nav ul li a {
+    display: block;
+    text-decoration: none;
+
+    padding: 10px 0;
+}
+nav ul li a:hover {
+    background-color: grey;
+}
   </style>
   
-  <body class="background-black">
+  <body class="background-orange">
 
   <!-- Navbar -->
-  <div class="w3-top">
-    <div class="w3-bar background-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-      <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
-      <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
-      <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
-      <a href="#Something Interesting" class="w3-bar-item w3-button" style="width:25% !important">SOMETHING INTERESTING</a>
-    </div>
-  </div>
+ <nav>
+  <ul>
+    <li><a href="home.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="services.html">Photos</a></li>
+    <li><a href="products.html">Something Interesting</a></li>
+    <li><a href="jobs.html">Links</a></li>
+  </ul>
+</nav>
 
   <!-- Page Content -->
   <div class="padding-large" id="main">
     <!-- Header/Home -->
-    <header class="w3-container w3-padding-32 w3-center background-black" id="home">
+    <header class="w3-container w3-padding-32 w3-center background-orange" id="home">
       <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Ben Newman.</h1>
       <p>Photographer and Web Designer.</p>
       <img src="https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=350" alt="boy" class="w3-image" width="992" height="1108">
@@ -91,16 +134,16 @@
       <!-- Grid for photos -->
       <div class="row-padding" style="margin:0 -16px">
         <div class="w3-half">
-          <img src="/w3images/wedding.jpg" style="width:100%">
-          <img src="/w3images/rocks.jpg" style="width:100%">
-          <img src="/w3images/sailboat.jpg" style="width:100%">
+          <img src="http://www.thedesignwork.com/wp-content/uploads/2011/10/Random-Pictures-of-Conceptual-and-Creative-Ideas-02.jpg" style="width:100%">
+          <img src="http://www.thedesignwork.com/wp-content/uploads/2011/10/Random-Pictures-of-Conceptual-and-Creative-Ideas-02.jpg" style="width:100%">
+          <img src="http://www.thedesignwork.com/wp-content/uploads/2011/10/Random-Pictures-of-Conceptual-and-Creative-Ideas-02.jpg" style="width:100%">
         </div>
 
         <div class="w3-half">
-          <img src="/w3images/underwater.jpg" style="width:100%">
-          <img src="/w3images/chef.jpg" style="width:100%">
-          <img src="/w3images/wedding.jpg" style="width:100%">
-          <img src="/w3images/p6.jpg" style="width:100%">
+          <img src="http://www.thedesignwork.com/wp-content/uploads/2011/10/Random-Pictures-of-Conceptual-and-Creative-Ideas-02.jpg" style="width:100%">
+          <img src="http://www.thedesignwork.com/wp-content/uploads/2011/10/Random-Pictures-of-Conceptual-and-Creative-Ideas-02.jpg" style="width:100%">
+          <img src="http://www.thedesignwork.com/wp-content/uploads/2011/10/Random-Pictures-of-Conceptual-and-Creative-Ideas-02.jpg" style="width:100%">
+          <img src="http://www.thedesignwork.com/wp-content/uploads/2011/10/Random-Pictures-of-Conceptual-and-Creative-Ideas-02.jpg" style="width:100%">
         </div>
       <!-- End photo grid -->
       </div>
