@@ -79,8 +79,24 @@ function showSlides(n) {
   h1 {
     font-size: 64px;
   }
-  
-  
+  .image{
+    max-width:100%;
+    height:auto
+  }
+  .content{
+    max-width:980px;
+    margin:auto
+  }
+  .padding-64{
+    padding-top:64px!important;
+    padding-bottom:64px!important
+  }
+  .justify{
+    text-align:justify!important
+  }
+  .text-grey{
+    color:#757575!important
+  }
 /* Navigation bar START >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 nav {
     width: 100%;
@@ -122,7 +138,8 @@ nav ul li a:hover {
 
 /* Slideshow container */
 .slideshow-container {
-  max-width:75% ;
+  max-width:100%;
+  height:auto
   position: relative;
   margin:auto;
 
@@ -137,6 +154,7 @@ nav ul li a:hover {
 .prev, .next {
   cursor: pointer;
   position: absolute;
+  z-index: 1;
   top: 50%;
   width: auto;
   margin-top: -22px;
@@ -232,15 +250,15 @@ nav ul li a:hover {
   <div class="padding-large">
     <!-- Header/Home -->
     <header class=" background-orange">
-      <h1><span class="w3-hide-small">I'm</span> Ben Newman.</h1>
-      <p>Please watch the video below.</p>
-      <img src="https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=350" alt="boy" class="w3-image" width="992" height="1108">
+      <h1> I'm Ben Newman.</h1>
+      <p>Please maximise the video below then press play.</p>
+      <img src="https://scontent-lhr3-1.xx.fbcdn.net/v/t31.0-8/20988406_10213991246360476_4887975886932580651_o.jpg?_nc_cat=0&oh=8680e7ba83d3ff292715cbdd86869d85&oe=5B6FDF5E" alt="photo of Ben" class="image" width="992" height="1108">
     </header>
 
     <!-- About Section -->
-    <div class="w3-content w3-justify w3-text-grey w3-padding-64"id="about">
+    <div class="content justify text-grey padding-64"id="about">
       <h2 class="w3-text-light-grey">My Name</h2>
-      <hr style="width:200px" class="w3-opacity">
+      <hr style="width:200px">
       <p>Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
         ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
         adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -254,29 +272,29 @@ nav ul li a:hover {
     </div>
 
     <!-- Portfolio Section -->
-    <div class="w3-padding-64 w3-content" id="Photos">
+    <div class="padding-64 content" id="Photos">
       <h2 class="w3-text-light-grey">My Photos</h2>
-      <hr style="width:200px" class="w3-opacity">
+      <hr style="width:200px">
 
      <!-- Slideshow container -->
-<div class="slideshow-container">
-
-  <!-- Full-width images with number and caption text -->
-  <div class="mySlides fade">
-    <div class="numbertext">1 / 3</div>
-    <img src="https://images-na.ssl-images-amazon.com/images/S/sgp-catalog-images/region_US/paramount-35065-Full-Image_GalleryBackground-en-US-1483994508505._RI_SX940_.jpg" style="width:100%">
-    <div class="text">Caption 1</div>
-  </div>
+  <div class="slideshow-container">
+  
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="https://images-na.ssl-images-amazon.com/images/S/sgp-catalog-images/region_US/paramount-35065-Full-Image_GalleryBackground-en-US-1483994508505._RI_SX940_.jpg" style="width:100%" class="image" width="992" height="1108">
+      <div class="text">Caption 1</div>
+    </div>
 
   <div class="mySlides fade">
     <div class="numbertext">2 / 3</div>
-    <img src="https://images.pexels.com/photos/428341/pexels-photo-428341.jpeg?auto=compress&cs=tinysrgb&h=350" style="width:100%">
+    <img src="https://images.pexels.com/photos/428341/pexels-photo-428341.jpeg?auto=compress&cs=tinysrgb&h=350" style="width:100%" class="image" width="992" height="1108">
     <div class="text">Caption Two</div>
   </div>
 
   <div class="mySlides fade">
     <div class="numbertext">3 / 3</div>
-    <img src="https://assets.vogue.com/photos/5a0b9b8d642102394f8e9b0f/master/pass/chris-pine-photo.jpg" style="width:100%">
+    <img src="https://assets.vogue.com/photos/5a0b9b8d642102394f8e9b0f/master/pass/chris-pine-photo.jpg" style="width:100%" class="image" width="992" height="1108">
     <div class="text">Caption Three</div>
   </div>
 
@@ -295,24 +313,27 @@ nav ul li a:hover {
       <!-- End photo grid -->
       </div>
     <!-- End Portfolio Section -->
-    </div>
+    
 
-    <!-- Contact Section -->
-    <div class="w3-padding-64 w3-content w3-text-grey" id="Something Interesting">
+    <!-- Something Interesting -->
+    <div class="padding-64 content text-grey" id="Something Interesting">
       <h2 class="w3-text-light-grey">Something Interesting</h2>
-      <hr style="width:200px" class="w3-opacity">
-
+      <hr style="width:200px">
+   
+   <div class="padding-64 content text-grey" id="Links">
+      <h2 class="w3-text-light-grey">Link</h2>
+      <hr style="width:200px">
       
 
       <!-- Footer -->
-    <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+    <footer class="content padding-64 text-grey w3-xlarge">
       <i class="fa fa-facebook-official w3-hover-opacity"></i>
       <i class="fa fa-instagram w3-hover-opacity"></i>
       <i class="fa fa-snapchat w3-hover-opacity"></i>
       <i class="fa fa-pinterest-p w3-hover-opacity"></i>
       <i class="fa fa-twitter w3-hover-opacity"></i>
       <i class="fa fa-linkedin w3-hover-opacity"></i>
-      <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+      <p class="w3-medium">Designed by Ben Newman</p>
     <!-- End footer -->
     </footer>
 
