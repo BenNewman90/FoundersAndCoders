@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="keywords" content="HTML,CSS,XML,JavaScript, Ben, Newman, Founders, and, Coders">
   
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+ 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   
@@ -97,12 +97,25 @@ function showSlides(n) {
   .text-grey{
     color:#757575!important
   }
+  .text-light-grey{
+    color:#f1f1f1!important
+  }
+  .xlarge{
+    font-size:24px!important
+  }
+  .hover-opacity:hover{
+    opacity:0.60
+  }
+  .medium{
+    font-size:15px!important
+  }
 /* Navigation bar START >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 nav {
     width: 100%;
     background: orange;
     position: fixed;
     opacity:0.7;
+    z-index: 1;
 }
 
 nav ul {
@@ -116,7 +129,7 @@ nav ul li {
     float: left;
     text-align: center;
     border-right: 1px solid #ccc;
-    width: calc(100% / 5);
+    width: calc(100% / 4);
     box-sizing: border-box;
 }
 nav ul li:first-child {
@@ -138,8 +151,7 @@ nav ul li a:hover {
 
 /* Slideshow container */
 .slideshow-container {
-  max-width:100%;
-  height:auto
+  max-width:100% ;
   position: relative;
   margin:auto;
 
@@ -154,7 +166,6 @@ nav ul li a:hover {
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  z-index: 1;
   top: 50%;
   width: auto;
   margin-top: -22px;
@@ -239,7 +250,6 @@ nav ul li a:hover {
     <nav>
       <ul>
         <li><a href="#Home">Home</a></li>
-        <li><a href="#About">About</a></li>
         <li><a href="#Photos">Photos</a></li>
         <li><a href="#Something Interesting">Something Interesting</a></li>
         <li><a href="#Links">Links</a></li>
@@ -250,31 +260,18 @@ nav ul li a:hover {
   <div class="padding-large">
     <!-- Header/Home -->
     <header class=" background-orange">
-      <h1> I'm Ben Newman.</h1>
+      <h1> Hi, I'm Ben.</h1>
       <p>Please maximise the video below then press play.</p>
       <img src="https://scontent-lhr3-1.xx.fbcdn.net/v/t31.0-8/20988406_10213991246360476_4887975886932580651_o.jpg?_nc_cat=0&oh=8680e7ba83d3ff292715cbdd86869d85&oe=5B6FDF5E" alt="photo of Ben" class="image" width="992" height="1108">
     </header>
 
     <!-- About Section -->
-    <div class="content justify text-grey padding-64"id="about">
-      <h2 class="w3-text-light-grey">My Name</h2>
-      <hr style="width:200px">
-      <p>Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
-        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      </p>
-  
-      <button class="w3-button w3-light-grey padding-large w3-section">
-        <i class="fa fa-download"></i> Download Resume
-      </button>
-
-      </div>
-    </div>
+    
 
     <!-- Portfolio Section -->
     <div class="padding-64 content" id="Photos">
-      <h2 class="w3-text-light-grey">My Photos</h2>
-      <hr style="width:200px">
+      <h2 class="text-light-grey">My Photos</h2>
+
 
      <!-- Slideshow container -->
   <div class="slideshow-container">
@@ -317,23 +314,23 @@ nav ul li a:hover {
 
     <!-- Something Interesting -->
     <div class="padding-64 content text-grey" id="Something Interesting">
-      <h2 class="w3-text-light-grey">Something Interesting</h2>
-      <hr style="width:200px">
+      <h2 class="text-light-grey">Something Interesting</h2>
+
    
    <div class="padding-64 content text-grey" id="Links">
-      <h2 class="w3-text-light-grey">Link</h2>
-      <hr style="width:200px">
+      <h2 class="text-light-grey">Links</h2>
+
       
 
       <!-- Footer -->
-    <footer class="content padding-64 text-grey w3-xlarge">
-      <i class="fa fa-facebook-official w3-hover-opacity"></i>
-      <i class="fa fa-instagram w3-hover-opacity"></i>
-      <i class="fa fa-snapchat w3-hover-opacity"></i>
-      <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-      <i class="fa fa-twitter w3-hover-opacity"></i>
-      <i class="fa fa-linkedin w3-hover-opacity"></i>
-      <p class="w3-medium">Designed by Ben Newman</p>
+    <footer class="content padding-64 text-grey xlarge">
+      <i class="fa fa-facebook-official hover-opacity"></i>
+      <i class="fa fa-instagram hover-opacity"></i>
+      <i class="fa fa-snapchat hover-opacity"></i>
+      <i class="fa fa-pinterest-p hover-opacity"></i>
+      <i class="fa fa-twitter hover-opacity"></i>
+      <i class="fa fa-linkedin hover-opacity"></i>
+      <p class="medium">Designed by Ben Newman</p>
     <!-- End footer -->
     </footer>
 
